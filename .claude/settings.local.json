@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www.zenit.uy)",
+      "Bash(xargs grep:*)"
+    ]
+  }
+}

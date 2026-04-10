@@ -1,0 +1,127 @@
+.filtros {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.filtros__grupo {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.filtros__titulo-grupo {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--color-gray-mid);
+}
+
+.filtros__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filtros__item {
+  display: flex;
+  align-items: center;
+}
+
+.filtros__label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.filtros__checkbox {
+  width: 14px;
+  height: 14px;
+  border: 0.5px solid var(--color-gray-mid);
+  border-radius: 2px;
+  cursor: pointer;
+  accent-color: var(--color-primary);
+}
+
+.filtros__texto {
+  font-size: 14px;
+  color: var(--color-black);
+}
+
+.filtros__colores {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filtros__color-btn {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid rgba(10, 10, 10, 0.12);
+  cursor: pointer;
+  transition: outline-offset var(--transition), outline-color var(--transition);
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.filtros__color-btn:hover {
+  outline-color: var(--color-gray-mid);
+}
+
+.filtros__color-btn--activo {
+  outline-color: var(--color-black);
+}
+
+.filtros__precio {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.filtros__slider {
+  width: 100%;
+  height: 2px;
+  appearance: none;
+  background: var(--color-gray-mid);
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+.filtros__slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  cursor: pointer;
+  border: none;
+}
+
+.filtros__precio-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--color-gray-mid);
+}
+
+.filtros__reset {
+  padding: 11px 16px;
+  border: 0.5px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--color-gray-mid);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  transition: border-color var(--transition), color var(--transition);
+  text-align: center;
+}
+
+.filtros__reset:hover {
+  border-color: var(--color-black);
+  color: var(--color-black);
+}

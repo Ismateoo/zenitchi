@@ -1,0 +1,26 @@
+.lo-mas-buscado {
+  padding: 80px 0 0;
+}
+
+.lo-mas-buscado__inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--padding-x);
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.lo-mas-buscado__titulo {
+  font-family: var(--font-display);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--color-black);
+}
+
+.lo-mas-buscado__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}

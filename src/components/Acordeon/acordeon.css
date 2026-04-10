@@ -1,0 +1,44 @@
+.acordeon {
+  border-top: 0.5px solid var(--color-border);
+}
+
+.acordeon__item {
+  border-bottom: 0.5px solid var(--color-border);
+}
+
+.acordeon__encabezado {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  text-align: left;
+  gap: 16px;
+}
+
+.acordeon__titulo {
+  font-size: 11px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--color-black);
+}
+
+.acordeon__icono {
+  font-size: 18px;
+  color: var(--color-gray-mid);
+  line-height: 1;
+  flex-shrink: 0;
+  transition: color var(--transition);
+}
+
+.acordeon__item--abierto .acordeon__icono {
+  color: var(--color-black);
+}
+
+.acordeon__contenido {
+  padding-bottom: 20px;
+  font-size: 14px;
+  color: var(--color-gray-mid);
+  line-height: 1.7;
+}
