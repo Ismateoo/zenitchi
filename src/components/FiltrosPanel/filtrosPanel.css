@@ -125,3 +125,23 @@
   border-color: var(--color-black);
   color: var(--color-black);
 }
+
+/* ── Responsive (mobile: full-width stacked) ── */
+
+@media (max-width: 768px) {
+  .filtros {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .filtros__grupo {
+    flex: 1;
+    min-width: 140px;
+  }
+
+  .filtros__reset {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}

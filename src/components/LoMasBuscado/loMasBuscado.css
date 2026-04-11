@@ -24,3 +24,26 @@
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .lo-mas-buscado {
+    padding: 56px 0 0;
+  }
+
+  .lo-mas-buscado__titulo {
+    font-size: 26px;
+  }
+
+  .lo-mas-buscado__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .lo-mas-buscado__grid {
+    gap: 12px;
+  }
+}

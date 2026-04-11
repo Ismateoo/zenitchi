@@ -224,3 +224,19 @@
 .navbar__drawer-catalogo:hover {
   opacity: 0.85;
 }
+
+/* ── Responsive ── */
+
+@media (max-width: 480px) {
+  .navbar__inner {
+    padding: 0 var(--padding-x);
+  }
+
+  .navbar__drawer {
+    width: 100%;
+  }
+
+  .navbar__busqueda--abierta .navbar__buscador {
+    width: 140px;
+  }
+}

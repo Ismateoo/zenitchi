@@ -282,3 +282,56 @@
 .producto__relacionados-grid .producto-card:hover .producto-card__cta {
   color: var(--color-primary);
 }
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .producto {
+    padding: 32px 0 0;
+  }
+
+  .producto__layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .producto__galeria-wrap {
+    position: static;
+  }
+
+  .producto__nombre {
+    font-size: 28px;
+  }
+
+  .producto__relacionados {
+    margin-top: 64px;
+    padding: 48px 0;
+  }
+
+  .producto__relacionados-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .producto__relacionados-cabecera {
+    margin-bottom: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .producto__nombre {
+    font-size: 24px;
+  }
+
+  .producto__precio {
+    font-size: 22px;
+  }
+
+  .producto__tallas {
+    flex-wrap: wrap;
+  }
+
+  .producto__relacionados-titulo {
+    font-size: 22px;
+  }
+}

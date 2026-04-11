@@ -23,6 +23,7 @@ export default function Catalogo() {
   const { lista, obtenerTodos } = useProductos()
   const [categoriaActiva, setCategoriaActiva] = useState('todos')
   const [filtros, setFiltros] = useState(FILTROS_INICIALES)
+  const [filtrosMobileAbiertos, setFiltrosMobileAbiertos] = useState(false)
 
   useEffect(() => {
     obtenerTodos()
@@ -110,7 +111,13 @@ export default function Catalogo() {
           ))}
         </div>
 
-        <div className="catalogo__layout">
+        <div className={`catalogo__layout${filtrosMobileAbiertos ? ' catalogo__layout--filtros-abiertos' : ''}`}>
+          <button
+            className="catalogo__filtros-toggle"
+            onClick={() => setFiltrosMobileAbiertos(prev => !prev)}
+          >
+            {filtrosMobileAbiertos ? '✕ Ocultar filtros' : '⊞ Filtros'}
+          </button>
           <FiltrosPanel
             filtros={{ ...filtros, precioMax: precioMaxActual }}
             precioRango={precioRango}

@@ -45,3 +45,19 @@
 .error404__boton:hover {
   opacity: 0.85;
 }
+
+/* ── Responsive ── */
+
+@media (max-width: 480px) {
+  .error404__label {
+    font-size: 64px;
+  }
+
+  .error404__titulo {
+    font-size: 22px;
+  }
+
+  .error404 {
+    padding: 32px 20px;
+  }
+}

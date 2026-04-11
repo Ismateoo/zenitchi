@@ -101,3 +101,46 @@
   object-fit: contain;
   object-position: center right;
 }
+
+/* ── Responsive ── */
+
+@media (max-width: 768px) {
+  .hero__inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 56px var(--padding-x);
+    min-height: auto;
+  }
+
+  .hero__titulo {
+    font-size: 44px;
+  }
+
+  .hero__visual {
+    justify-content: center;
+  }
+
+  .hero__imagen {
+    max-height: 360px;
+    object-position: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__inner {
+    padding: 40px var(--padding-x);
+    gap: 28px;
+  }
+
+  .hero__titulo {
+    font-size: 34px;
+  }
+
+  .hero__ctas {
+    flex-wrap: wrap;
+  }
+
+  .hero__visual {
+    display: none;
+  }
+}

@@ -57,6 +57,7 @@ export default function Categoria() {
   const { slug } = useParams()
   const { lista, obtenerPorCategoria } = useProductos()
   const [filtros, setFiltros] = useState(FILTROS_INICIALES)
+  const [filtrosMobileAbiertos, setFiltrosMobileAbiertos] = useState(false)
 
   const configFiltros = CONFIG_FILTROS[slug] || {}
 
@@ -134,7 +135,13 @@ export default function Categoria() {
           <p className="categoria__descripcion">{DESCRIPCIONES[slug] || ''}</p>
         </div>
 
-        <div className="categoria__layout">
+        <div className={`categoria__layout${filtrosMobileAbiertos ? ' categoria__layout--filtros-abiertos' : ''}`}>
+          <button
+            className="categoria__filtros-toggle"
+            onClick={() => setFiltrosMobileAbiertos(prev => !prev)}
+          >
+            {filtrosMobileAbiertos ? '✕ Ocultar filtros' : '⊞ Filtros'}
+          </button>
           <FiltrosPanel
             filtros={{ ...filtros, precioMax: precioMaxActual }}
             precioRango={precioRango}

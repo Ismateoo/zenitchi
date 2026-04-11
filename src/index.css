@@ -22,6 +22,18 @@
   --padding-x: 40px;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --padding-x: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --padding-x: 16px;
+  }
+}
+
 html {
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
